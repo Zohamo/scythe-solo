@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "POL",
+    "name": "Polania",
+    "color": "#ffffff"
+  },
+  {
+    "slug": "NOR",
+    "name": "Nordic",
+    "color": "blue"
+  },
+  {
+    "slug": "CRI",
+    "name": "Crimea",
+    "color": "yellow"
+  },
+  {
+    "slug": "SAX",
+    "name": "Saxony",
+    "color": "#000000"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "date": "2018-12-19",
+    "human": {
+      "name": "Mathias",
+      "faction": "CRI",
+      "winner": true,
+      "score": 74
+    },
+    "automa": {
+      "automaLevel": 0,
+      "faction": "NOR",
+      "score": 61,
+      "stars": 6
+    }
+  },
+  {
+    "id": 2,
+    "date": "2018-12-27",
+    "human": {
+      "name": "Mathias",
+      "faction": "SAX",
+      "score": 82
+    },
+    "automa": {
+      "automaLevel": 1,
+      "faction": "RUS",
+      "winner": true,
+      "score": 83,
+      "stars": 6
+    }
+  }
+]
