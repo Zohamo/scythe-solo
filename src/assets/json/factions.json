@@ -10,6 +10,11 @@
     "color": "blue"
   },
   {
+    "slug": "RUS",
+    "name": "Rusviet",
+    "color": "red"
+  },
+  {
     "slug": "CRI",
     "name": "Crimea",
     "color": "yellow"
@@ -18,5 +23,15 @@
     "slug": "SAX",
     "name": "Saxony",
     "color": "#000000"
+  },
+  {
+    "slug": "TOG",
+    "name": "Togawa",
+    "color": "purple"
+  },
+  {
+    "slug": "ALB",
+    "name": "Albion",
+    "color": "green"
   }
 ]

@@ -26,6 +26,13 @@ export interface Game {
   date: string;
   human: Player;
   automa: Player;
+  modules?: {
+    airship?: {
+      aggressive: string;
+      passive: string;
+    };
+    resolution?: string;
+  };
 }
 
 export interface Player {
@@ -34,7 +41,7 @@ export interface Player {
   faction: string | FactionSlug;
   playerMat?: string;
   automaLevel?: AutomaLevel;
-  winner: boolean;
+  winner?: boolean;
   score: number;
   stars?: number;
   popularity?: number;
