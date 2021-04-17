@@ -46,42 +46,19 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import { Faction, Game } from "@/types";
-import FactionService from "@/services/FactionService";
-import GameService from "@/services/GameService";
+import { defineComponent, PropType } from "vue";
+import { Faction } from "@/types";
 
 export default defineComponent({
   name: "Table",
-  props: {},
-  data: () => {
-    return {
-      factions: [] as Faction[],
-      games: [] as Game[],
-      results: [] as { [key: string]: any },
-    };
-  },
-  created() {
-    this.factions = FactionService.getFactions();
-    this.games = GameService.getGames();
-    this.results = this.getResults();
-  },
-  methods: {
-    getResults() {
-      const results: { [key: string]: any } = [];
-      this.games.forEach((game) => {
-        if (!results[game.automa.faction]) {
-          results[game.automa.faction] = [];
-        }
-        if (
-          !results[game.automa.faction][game.human.faction] ||
-          game.human.score >
-            results[game.automa.faction][game.human.faction].human.score
-        ) {
-          results[game.automa.faction][game.human.faction] = game;
-        }
-      });
-      return results;
+  props: {
+    factions: {
+      type: Array as PropType<Faction[]>,
+      required: true,
+    },
+    results: {
+      type: Array as PropType<{ [key: string]: any }>,
+      required: true,
     },
   },
 });
