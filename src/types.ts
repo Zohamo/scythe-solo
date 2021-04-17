@@ -39,7 +39,7 @@ export interface Player {
   id?: number;
   name?: string;
   faction: string | FactionSlug;
-  playerMat?: string;
+  playerMatId?: string;
   automaLevel?: AutomaLevel;
   winner?: boolean;
   score: number;
